@@ -62,6 +62,11 @@ p {
     padding: 0 15px;
     margin: 0 auto;
 }
+.header-contact {
+    border-bottom: 1px solid var(--top-lain);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 /*Общий логотип */
 .logo {
@@ -80,7 +85,6 @@ p {
 
 /* Общая навигация */
 .header-contact .container {
-    border-bottom: 1px solid var(--top-lain);
     padding-top: 24px;
     padding-bottom: 25px;
     display: flex;
@@ -89,7 +93,7 @@ p {
 .site-nav {
     display: flex;
     align-items: center;
-    margin-right: 331px;
+    margin-right: auto;
 }
 .site-nav-list{
     display: flex;
@@ -105,7 +109,10 @@ p {
 }
 .nav-link:hover,
 .nav-link:focus,
-.nav-link:active {
+.nav-link:active,
+.nav-link .current,
+.contact-item:focus,
+.contact-item:hover {
     color: var(--accent-color);
 }
 .nav-link {
@@ -194,14 +201,14 @@ p {
 .content-text {
     color: var(--main-content-color);
     font-size: 14px;
-    line-height: 1.142;
-    margin: 10px;
+    line-height: 1.71;
+    font-weight: 400;
 }
 .content-title {
     color: var(--titel-text-color);
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
-    margin: 10px;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
